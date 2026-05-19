@@ -1,4 +1,4 @@
-gradio>=4.0.0
+gradio>=5.0.0,<6.0.0
 torch>=2.0.0
 torchvision>=0.15.0
 open-clip-torch>=2.20.0
