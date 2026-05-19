@@ -113,7 +113,7 @@ research project.
 ## Run locally
 
 ```bash
-git clone https://github.com/<your-username>/clip-anomaly-detection
+git clone https://github.com/prakash-nitc/clip-anomaly-detection
 cd clip-anomaly-detection
 pip install -r requirements.txt
 
