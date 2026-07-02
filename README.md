@@ -38,6 +38,10 @@ industrial inspection.
 
 CLIP ViT-L/14, zero training data. Reproduce: `python benchmark.py --data /path/to/mvtec-ad`
 
+> **Note on models:** benchmark numbers below use **ViT-L/14** (GPU). The live demo runs
+> the lighter **ViT-B/32** so it stays fast on free CPU hosting — a deliberate
+> accuracy-vs-latency tradeoff; the method is identical.
+
 ### Headline
 
 | Method | Training data | Image AUROC | Pixel AUROC |
@@ -97,16 +101,6 @@ This is an honest negative-and-positive result: it identifies *where* a
 zero-shot VLM is sufficient and *where* it is not — which is exactly the
 boundary that motivates the multimodal reasoning explored in the broader
 research project.
-
----
-
-## Resume bullet
-
-> Built a **zero-shot anomaly detection + localization** system using CLIP
-> (vision-language model); achieved **88.5% image-level AUROC on MVTec AD with
-> zero training data** — within ~4 points of a trained One-Class SVM (92.4%)
-> and outperforming it on all texture categories — with windowed defect
-> heatmaps and a prompt-design ablation. Deployed as an interactive Gradio app.
 
 ---
 
